@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121926;
+  color: #e0e6ed;
+  overflow-x: hidden;
+}
+
+.news-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+.news-header {
+  background-color:#1f2a38;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #2e3b4e;
+}
+
+.logo {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #f0f0f0;
+}
+
+.news-content {
+  display: flex;
+  flex: 1;
+}
+
+
+.navbar {
+  width: 17%;
+  background-color: #1f2a38;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-right: 2px solid #222;
+}
+
+.nav-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.nav-link {
+  font-size: 2.2rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #ddd;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 0.5rem;
+
+}
+
+.nav-link:hover {
+  color: #1abc9c;
+  transform: translateX(5px);
+}
+
+.news-section {
+  flex: 1;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+.headline {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.headline img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  opacity: 0.9;
+}
+
+.headline-title {
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.8rem;
+  border-radius: 0 0 0.5rem;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.news-item {
+  background-color: #1e1e1e;
+  border-radius: 0.6rem;
+}
+
+.news-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.news-item h3 {
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  color: #fff;
+  font-weight: 500;
+}
